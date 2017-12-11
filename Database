@@ -1,0 +1,13 @@
+      // create your database and table on postico  or psql shell
+      CREATE DATABASE  bulletinboard;
+
+      //create table
+
+      CREATE TABLE  messages (
+        id serial primary key,
+        title text,
+        body text
+       );
+
+       // make one test entry
+       // insert into messages (title, body) values ('hello', 'world');

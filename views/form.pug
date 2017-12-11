@@ -1,0 +1,30 @@
+include includes/header.pug
+.container-fluid
+  h1 Add Message:
+  form.navbar-form.navbar-left(action='/add', method='get')
+    .form-group
+      label Title:
+      br
+      input.form-control(type='text', name='title')
+    div
+      br
+      label  Body:
+      br
+      textarea(name='body')
+    div
+      br
+      button.btn.btn-default(type='submit') Submit
+      br
+      br  
+ 
+    .container
+
+      ul.pager
+        li
+          a(href='/') Previous
+        
+              
+              
+       
+   
+include includes/footer.pug

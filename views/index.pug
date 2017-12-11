@@ -1,0 +1,15 @@
+include includes/header.pug
+
+h1= title
+
+each post in messages
+  div
+    h2= post.title
+    p= post.body
+
+.container
+    ul.pager
+        li
+          a(href='/form') Next
+           
+include includes/footer.pug
